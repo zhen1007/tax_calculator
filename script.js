@@ -1,8 +1,8 @@
 import { calculateTax } from './taxCalculator.js';
 
 $(document).ready(function () {
-    $("#range-s").val(50000)
-    $('#valBox').val(50000)
+    $("#range-s").val(0)
+    $('#valBox').val(0)
     $("#range-s").on('input', function (event) {
         event.preventDefault()
         $("#valBox").val(event.target.value)
