@@ -11,7 +11,7 @@
 }
 
 .amount {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -19,8 +19,9 @@ input[type="range" i] {
     width: 100%;
 }
 
+
 .final-amount {
-    font-size: 4rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -41,6 +42,9 @@ input[type="range" i] {
 
 .bg-white {
     box-shadow: -1px -2px 20px 0px #0000001a;
+}
+.align-items-center p {
+    margin-bottom: 0rem;
 }
 
 /* .tax-table{

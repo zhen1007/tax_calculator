@@ -16,40 +16,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="row py-5 rounded-4 background-primary">
+                    <div class="row py-2 rounded-4 background-primary">
                         <h2 class="text-center main-h">Tax Calculator</h2>
                         <div class="overflow-hidden">
-                            <div class="px-5">
-                                <form action="">
-                                    <div>
-                                        <small class="sm-text text-secondary">Your Total Income</small>
+                            <div class="px-2 row text-center">
+                                
+                                <div
+                                    class="d-flex justify-content-center align-items-center bg-white text-center rounded-4 final-amount pt-2">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="text-secondary mx-1">Your Total Income</span>
+                                        <span class="dollar mx-1">$</span>
+                                        <input type="number" value="0" id="valBox" style="width:15%"  class="mx-3 custom-text amount">
+                                        <button type="button" class="mx-1 btn calculate btn-primary">Calculate</button>
+                                        <p class="mx-1 ms-3">Tax due: $</p>
+                                        <p id="final-amount" class="text-primary mx-1">0</p>
+                                        <p class="mx-1">(Effective Tax Rate: </p>
+                                        <p id="tax-perc" class="ms-1">0</p>
+                                        <p class="">%)</p>
+                                        
                                     </div>
-                                    <div class="mt-1 d-inline-flex">
-                                        <span class="dollar ">$</span>
-                                        <input type="number" value="0" id="valBox" class="custom-text amount ms-3">
 
-                                    </div>
-                                    <div>
-                                        <input id="range-s" type="range" min="0" step="1000" max="100000" name="">
-                                        <span class="sm-text text-secondary">$ 500</span>
-                                        <span class="float-end sm-text text-secondary">$ 100K</span>
-
-                                    </div>
-                                    <div class="mt-5 text-center">
-                                        <button type="button" class="btn calculate btn-primary">Calculate</button>
-                                    </div>
-                                </form>
-
-                                <div class="bg-white text-center rounded-4 mt-5 py-5">
+                                </div>
+                                <!-- <div class="bg-white text-center rounded-4 py-2">
                                     <p class="text-body-tertiary">Your total tax due is:</p>
-                                    <div class="mt-1 d-inline-flex">
+                                    <div class="d-inline-flex">
                                         <span class="dollar text-primary">$</span>
                                         <p id="final-amount" class="final-amount ms-3 text-primary">0</p>
+
                                     </div>
                                     <br>
                                     <div class="d-inline-flex">
                                         <div class="me-3">
-                                            <div class="d-inline-flex mt-3">
+                                            <div class="d-inline-flex mt-2">
                                                 <span class="ms-2"></span><small class="sm-text text-secondary">
                                                     Total Income</small><span></span>
                                             </div>
@@ -57,68 +55,68 @@
 
                                         </div>
                                         <div class="me-3">
-                                            <div class="d-inline-flex mt-3">
+                                            <div class="d-inline-flex mt-2">
                                                 <span class="ms-2"></span><small class="sm-text text-secondary">Tax Rate
                                                     %</small><span></span>
                                             </div>
                                             <p><span id="tax-perc">0</span> %</p>
                                         </div>
                                         <div class="me-3">
-                                            <div class="d-inline-flex mt-3">
+                                            <div class="d-inline-flex mt-2">
                                                 <span class="ms-2"></span><small class="sm-text text-secondary">
                                                     Tax Due</small><span></span>
                                             </div>
                                             <p>$ <span id="tax-due">0</span></p>
                                         </div>
                                         <br>
-                                    </div>
-                                    <div class="pt-3 tax-table">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="sm-text text-secondary" scope="col">Taxable Income</th>
-                                                    <th class="sm-text text-secondary" scope="col">Taxes Owed</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$0 - $11,000</td>
-                                                    <td class="sm-text text-secondary">10%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$11,001 - $44,725</td>
-                                                    <td class="sm-text text-secondary">12%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$44,726 to $95,375</td>
-                                                    <td class="sm-text text-secondary">22%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$95,376 to $182,100</td>
-                                                    <td class="sm-text text-secondary">24%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$182,101 to $231,250</td>
-                                                    <td class="sm-text text-secondary">32%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$231,251 to $578,125</td>
-                                                    <td class="sm-text text-secondary">35%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="sm-text text-secondary">$578,126 or more</td>
-                                                    <td class="sm-text text-secondary">37%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    </div> -->
+                                <div class="tax-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="sm-text text-secondary" scope="col">Taxable Income</th>
+                                                <th class="sm-text text-secondary" scope="col">Taxes Owed</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$0 - $11,000</td>
+                                                <td class="sm-text text-secondary">10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$11,001 - $44,725</td>
+                                                <td class="sm-text text-secondary">12%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$44,726 to $95,375</td>
+                                                <td class="sm-text text-secondary">22%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$95,376 to $182,100</td>
+                                                <td class="sm-text text-secondary">24%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$182,101 to $231,250</td>
+                                                <td class="sm-text text-secondary">32%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$231,251 to $578,125</td>
+                                                <td class="sm-text text-secondary">35%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sm-text text-secondary">$578,126 or more</td>
+                                                <td class="sm-text text-secondary">37%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
